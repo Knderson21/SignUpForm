@@ -45,7 +45,7 @@ header {
     font-size: 1.2rem;
     outline: none;
     border: none;
-    background-color: crimson;
+    background-color: #245DDA;
     color: #fff;
     cursor: pointer;
 }
@@ -104,13 +104,13 @@ header {
 .modal-container .submit-btn {
     padding: 10px 30px;
     font-weight: bold;
-    background: crimson;
+    background: #245DDA;
     border: none;
     color: #fff;
     cursor: pointer;
 }
 
 /* Javascript */
-.modal-container .show-modal {
+.modal-container.show-modal {
     display: block;
 }
