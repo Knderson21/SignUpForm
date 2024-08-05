@@ -110,6 +110,49 @@ header {
     cursor: pointer;
 }
 
+.button-xp {
+    background: linear-gradient(
+        180deg,
+        rgba(9, 151, 255, 1) 0%,
+        rgba(0, 83, 238, 1) 8%,
+        rgba(0, 80, 238, 1) 40%,
+        rgba(0, 102, 255, 1) 88%,
+        rgba(0, 102, 255, 1) 93%,
+        rgba(0, 91, 255, 1) 95%,
+        rgba(0, 61, 215, 1) 96%,
+        rgba(0, 61, 215, 1) 100%
+    );
+    border: 1px solid #1e4d78;
+    border-radius: 4px;
+    color: white;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    padding: 10px 20px;
+    text-shadow: 1px 1px #0f1089;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+}
+
+.button-xp:hover {
+    background: linear-gradient(
+        180deg,
+        rgba(9, 151, 255, 1) 0%,
+        rgba(0, 83, 238, 1) 10%,
+        rgba(0, 80, 238, 1) 42%,
+        rgba(0, 102, 255, 1) 90%,
+        rgba(0, 102, 255, 1) 95%,
+        rgba(0, 91, 255, 1) 97%,
+        rgba(0, 61, 215, 1) 98%,
+        rgba(0, 61, 215, 1) 100%
+    );
+}
+
+.button-xp:active {
+    background: linear-gradient(to bottom, #2d5d8b 0%, #2d5d8b 50%, #3a6ea5 51%, #3a6ea5 100%);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
 /* Javascript */
 .modal-container.show-modal {
     display: block;
