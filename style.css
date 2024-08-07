@@ -62,8 +62,11 @@ header {
 
 .modal {
     background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee,
+        inset -3px -3px #003bda, inset 3px 3px #0855dd;
+        border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0 0 3px 0;
     position: absolute;
     overflow: hidden;
     top: 50%;
@@ -71,6 +74,35 @@ header {
     transform: translate(-50%, -50%);
     max-width: 400px;
     width: 400px;
+}
+
+.title-bar {
+    font-family: "Trebuchet MS";
+    background: linear-gradient(
+        180deg,
+        rgba(9, 151, 255, 1) 0%,
+        rgba(0, 83, 238, 1) 8%,
+        rgba(0, 80, 238, 1) 40%,
+        rgba(0, 102, 255, 1) 88%,
+        rgba(0, 102, 255, 1) 93%,
+        rgba(0, 91, 255, 1) 95%,
+        rgba(0, 61, 215, 1) 96%,
+        rgba(0, 61, 215, 1) 100%
+    );
+    padding: 3px 5px 3px 3px;
+    border-top: 1px solid #0831d9;
+    border-left: 1px solid #0831d9;
+    border-right: 1px solid #001ea0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 7px;
+    font-size: 16px;
+    text-shadow: 1px 1px #0f1089;
+    height: 30px;
+}
+
+.title-bar-text {
+    padding-left: 3px;
+    color: #fff;
 }
 
 .modal-content {
@@ -92,22 +124,76 @@ header {
 }
 
 .close-btn {
-    background: transparent;
-    border: none;
-    font-size: 25px;
+    background: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 15px;
     position: absolute;
     top: 5px;
     right: 12px;
     cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .modal-container .submit-btn {
-    padding: 10px 30px;
-    font-weight: bold;
-    background: #245DDA;
-    border: none;
-    color: #fff;
+    font-size: 11px;
+    box-sizing: border-box;
+    border: 1px solid #003c74;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(236, 235, 229, 1) 86%,
+        rgba(216, 208, 196, 1) 100%
+    );
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+.button-xp {
+    background: linear-gradient(
+        180deg,
+        rgba(9, 151, 255, 1) 0%,
+        rgba(0, 83, 238, 1) 8%,
+        rgba(0, 80, 238, 1) 40%,
+        rgba(0, 102, 255, 1) 88%,
+        rgba(0, 102, 255, 1) 93%,
+        rgba(0, 91, 255, 1) 95%,
+        rgba(0, 61, 215, 1) 96%,
+        rgba(0, 61, 215, 1) 100%
+    );
+    border: 1px solid #1e4d78;
+    border-radius: 4px;
+    color: white;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    padding: 10px 20px;
+    text-shadow: 1px 1px #0f1089;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    outline: none;
+}
+
+.button-xp:hover {
+    background: linear-gradient(
+        180deg,
+        rgba(9, 151, 255, 1) 0%,
+        rgba(0, 83, 238, 1) 10%,
+        rgba(0, 80, 238, 1) 42%,
+        rgba(0, 102, 255, 1) 90%,
+        rgba(0, 102, 255, 1) 95%,
+        rgba(0, 91, 255, 1) 97%,
+        rgba(0, 61, 215, 1) 98%,
+        rgba(0, 61, 215, 1) 100%
+    );
+}
+
+.button-xp:active {
+    background: linear-gradient(to bottom, #2d5d8b 0%, #2d5d8b 50%, #3a6ea5 51%, #3a6ea5 100%);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 /* Javascript */
