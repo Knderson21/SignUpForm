@@ -95,9 +95,9 @@ header {
     border-right: 1px solid #001ea0;
     border-top-left-radius: 8px;
     border-top-right-radius: 7px;
-    font-size: 13px;
+    font-size: 16px;
     text-shadow: 1px 1px #0f1089;
-    height: 24px;
+    height: 30px;
 }
 
 .title-bar-text {
@@ -127,21 +127,30 @@ header {
     background: red;
     color: white;
     border: 1px solid white;
-    font-size: 25px;
+    border-radius: 3px;
+    font-size: 15px;
     position: absolute;
     top: 5px;
     right: 12px;
     cursor: pointer;
-    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .modal-container .submit-btn {
-    padding: 10px 30px;
-    font-weight: bold;
-    background: #245DDA;
-    border: none;
-    color: #fff;
-    cursor: pointer;
+    font-size: 11px;
+    box-sizing: border-box;
+    border: 1px solid #003c74;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(236, 235, 229, 1) 86%,
+        rgba(216, 208, 196, 1) 100%
+    );
+    box-shadow: none;
+    border-radius: 3px;
 }
 
 .button-xp {
